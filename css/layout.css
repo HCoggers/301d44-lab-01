@@ -17,12 +17,35 @@ main section {
 main div {
   height: 250px;
   width: 50%;
-}
-
-div:nth-of-type(2n+1) {
-  float: right;
+  display: inline-block;
 }
 
 footer {
   height: 80px;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    height: 100px;
+  } 
+  aside {
+    float: left;
+    height: 600px;
+    width: 200px;
+  }
+  main section {
+    width: 380px;
+    height: 200px;
+    display: inline-block;
+  }
+  section:first-of-type {
+    float: right;
+  }
+  main div {
+    width: 190px;
+    display: inline-block;
+  }
+  footer {
+    height: 150px;
+  }
 }
