@@ -1,0 +1,28 @@
+header {
+  height: 75px;
+}
+
+aside {
+  height: 150px;
+}
+
+main {
+  border: none;
+}
+
+main section {
+  height: 125px;
+}
+
+main div {
+  height: 250px;
+  width: 50%;
+}
+
+div:nth-of-type(2n+1) {
+  float: right;
+}
+
+footer {
+  height: 80px;
+}
