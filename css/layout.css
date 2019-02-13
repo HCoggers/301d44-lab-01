@@ -20,5 +20,29 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
+  header {
+    height: 100px;
+  }
+  
+  aside {
+    height: 600px;
+    flex: 1 200px;
+  }
+  
+  section {
+    height: 200px;
+    flex: 1.9 380px;
+  }
+  
+  body>div {
+    flex: 0.95 190px;
+    height: 250px;
+    align-self: flex-end;
+  }
+  
+  footer {
+    height: 150px;
+    width: 79.066%;
+  }
   
 }

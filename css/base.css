@@ -11,7 +11,7 @@ body {
   flex-flow: row wrap;
 }
 
-body  * {
+body * {
   width: 100%;
   border: 1px solid gray;
   font-family: sans-serif;
