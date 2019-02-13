@@ -6,18 +6,13 @@ aside {
   height: 150px;
 }
 
-main {
-  border: none;
-}
-
-main section {
+section {
   height: 125px;
 }
 
-main div {
-  height: 250px;
+body>div {
   width: 50%;
-  display: inline-block;
+  height: 250px;
 }
 
 footer {
@@ -27,25 +22,27 @@ footer {
 @media screen and (min-width: 768px) {
   header {
     height: 100px;
-  } 
+  }
+  
   aside {
-    float: left;
     height: 600px;
-    width: 200px;
+    flex: 1 200px;
   }
-  main section {
-    width: 380px;
+  
+  section {
     height: 200px;
-    display: inline-block;
+    flex: 1.9 380px;
   }
-  section:first-of-type {
-    float: right;
+  
+  body>div {
+    flex: 0.95 190px;
+    height: 250px;
+    align-self: flex-end;
   }
-  main div {
-    width: 190px;
-    display: inline-block;
-  }
+  
   footer {
     height: 150px;
+    width: 79.066%;
   }
+  
 }
