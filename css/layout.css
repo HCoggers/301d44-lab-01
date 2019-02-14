@@ -30,6 +30,9 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
+  body {
+    max-width: 960px;
+  }
   header {
     height: 100px;
   }
@@ -37,10 +40,12 @@ footer {
   aside {
     height: 600px;
     width: 20.8333%;
+    width: calc(100% / 4.8);
   }
   
   main {
     width: 79.1667%;
+    width: calc(100% - 100%/4.8)
   }
   
   section {
