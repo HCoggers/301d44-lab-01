@@ -10,7 +10,7 @@ section {
   height: 125px;
 }
 
-body>div {
+div {
   width: 50%;
   height: 250px;
 }
@@ -19,30 +19,49 @@ footer {
   height: 80px;
 }
 
+
+@media screen and (min-width: 480px) {
+  section {
+    width: 50%;
+  }
+  div {
+    width: 25%;
+  }
+}
+
 @media screen and (min-width: 768px) {
+  body {
+    max-width: 960px;
+  }
   header {
     height: 100px;
   }
   
   aside {
     height: 600px;
-    flex: 1 200px;
+    width: 20.8333%;
+    width: calc(100% / 4.8);
+  }
+  
+  main {
+    width: 79.1667%;
+    width: calc(100% - 100%/4.8)
   }
   
   section {
     height: 200px;
-    flex: 1.9 380px;
+    width: 50%;
   }
   
-  body>div {
-    flex: 0.95 190px;
+  div {
+    flex: 1;
     height: 250px;
     align-self: flex-end;
   }
   
   footer {
     height: 150px;
-    width: 79.066%;
+    width: 100%;
   }
   
 }
